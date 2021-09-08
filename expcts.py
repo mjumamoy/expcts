@@ -25,7 +25,7 @@ def main():
     print('  Required Dependencies: webvtt')
     print('  This script requires 3 or 5 arguments. No other amount of arguments are accepted.')
     print('  Valid Flags: -c, -ctab, -ctabanon, -canon')
-    print('  Format: expcts.py [input.vtt] [output.vtt] [Interviewee Name] [Pseudonym]')
+    print('  Format: expcts.py -flag [input.vtt] [output.vtt] [Interviewee Name] [Pseudonym]')
     print('  -> If you have a subject with a name used in the transcript that uses a space, make sure to use "" around their name. For example, if they used John Doe on Zoom. Use "John Doe" as the fourth argument.')
     print('  -> Make sure your VTT files are in the same directory as this .py file.')
     if len(args) == 3 and args[0] == '-c':
