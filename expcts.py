@@ -36,11 +36,11 @@ def main():
         end()
     if len(args) == 5 and args[0] == '-canon':
         grabcaption()
-        psuedonym()
+        pseudonym()
     if len(args) == 5 and args[0] == '-ctabanon':
         grabcaption()
         tab()
-        psuedonym()
+        pseudonym()
 
 # Grabbing Captions and Creating New Lines for New Text Strings
 def grabcaption():
@@ -58,12 +58,12 @@ def tab():
         file.write(output_tab)
 
 # Using Pseudonyms for Interviewees
-def psuedonym():
+def pseudonym():
     with open(output_plain, "r") as file:
         output_tab = file.read()
     subjectname = args[3]
-    psuedonymname = args[4]
-    output_anon = output_tab.replace(subjectname, psuedonymname)
+    pseudonymname = args[4]
+    output_anon = output_tab.replace(subjectname, pseudonymname)
     with open(output_plain, "w") as file:
         file.write(output_anon)
 
